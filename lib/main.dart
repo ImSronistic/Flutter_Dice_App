@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
           backgroundColor: Colors.red,
           appBar: AppBar(
@@ -16,6 +17,12 @@ void main() => runApp(
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: <Widget>[
+        Image(
+          image: AssetImage('images/dice1.png'),
+        )
+      ],
+    );
   }
 }
