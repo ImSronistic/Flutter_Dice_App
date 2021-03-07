@@ -7,7 +7,7 @@ void main() => runApp(
           backgroundColor: Colors.red,
           appBar: AppBar(
             title: Text('The Dice App'),
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.blueAccent,
           ),
           body: DicePage(),
         ),
@@ -20,8 +20,9 @@ class DicePage extends StatelessWidget {
     return Row(
       children: <Widget>[
         Image(
+          width: 200,
           image: AssetImage('images/dice1.png'),
-        )
+        ),
       ],
     );
   }
