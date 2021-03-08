@@ -4,7 +4,7 @@ void main() => runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.teal,
           appBar: AppBar(
             title: Text('The Dice App'),
             backgroundColor: Colors.blueAccent,
@@ -19,9 +19,17 @@ class DicePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Image(
-          width: 200,
-          image: AssetImage('images/dice1.png'),
+        Expanded(
+          flex: 2,
+          child: Image(
+            image: AssetImage('images/dice1.png'),
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Image(
+            image: AssetImage('images/dice1.png'),
+          ),
         ),
       ],
     );
