@@ -14,10 +14,16 @@ void main() => runApp(
       ),
     );
 
-class DicePage extends StatelessWidget {
+class DicePage extends StatefulWidget {
+  @override
+  _DicePageState createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
+  int leftDiceNumber = 3;
+
   @override
   Widget build(BuildContext context) {
-    var leftDiceNumber = 3;
     return Center(
       child: Row(
         children: <Widget>[
